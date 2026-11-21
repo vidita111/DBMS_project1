@@ -117,6 +117,5 @@ Ideas only, not implemented yet:
 - A `schema.sql` file and automated tests
 - Admit card and door chart views
 
-## Author
 
-Built by **Vidita Sharma** ([@vidita111](https://github.com/vidita111)).
+Built by **Vidita** ([@vidita111](https://github.com/vidita111)).
