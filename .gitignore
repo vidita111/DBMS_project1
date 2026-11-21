@@ -13,3 +13,5 @@ __pycache__/
 instance/
 repo/
 '@ | Set-Content .gitignore
+
+*.pem

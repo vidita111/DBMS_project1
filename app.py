@@ -14,13 +14,22 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY", "change-this-demo-secret")
 
 
 def get_db_connection():
-    return mysql.connector.connect(
-        host=os.getenv("MYSQL_HOST", "localhost"),
-        port=int(os.getenv("MYSQL_PORT", "3306")),
-        user=os.getenv("MYSQL_USER", "root"),
-        password=os.getenv("MYSQL_PASSWORD", ""),
-        database=os.getenv("MYSQL_DATABASE", "nsut_exam"),
-    )
+    config = {
+        "host": os.getenv("MYSQL_HOST", "localhost"),
+        "port": int(os.getenv("MYSQL_PORT", "3306")),
+        "user": os.getenv("MYSQL_USER", "root"),
+        "password": os.getenv("MYSQL_PASSWORD", ""),
+        "database": os.getenv("MYSQL_DATABASE", "nsut_exam"),
+    }
+
+    ssl_ca = os.getenv("MYSQL_SSL_CA")
+
+    if ssl_ca:
+        config["ssl_ca"] = ssl_ca
+        config["ssl_verify_cert"] = True
+        config["ssl_verify_identity"] = True
+
+    return mysql.connector.connect(**config)
 
 
 @contextmanager
