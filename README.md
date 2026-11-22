@@ -108,14 +108,5 @@ Add the `MYSQL_*` variables in Render's Environment settings. TiDB Cloud needs a
 - Compare row counts with `SELECT COUNT(*) FROM student;` and the other tables.
 - Log in once with each role.
 
-## Future Improvements
-
-Ideas only, not implemented yet:
-
-- Automatic seat allocation that avoids same-subject neighbours
-- Faculty duty limits enforced in the database
-- A `schema.sql` file and automated tests
-- Admit card and door chart views
-
 
 Built by **Vidita** ([@vidita111](https://github.com/vidita111)).
