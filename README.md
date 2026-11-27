@@ -21,6 +21,7 @@ A DBMS project that manages exam logistics: students, faculty, branches, subject
 - Scripts to migrate data and create demo accounts
 
 If you want to access admin account ,Contact Me
+vidita.singhania09@gmail.com
 
 ## Tech Stack
 
