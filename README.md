@@ -20,6 +20,8 @@ A DBMS project that manages exam logistics: students, faculty, branches, subject
 - Built-in ER diagram page
 - Scripts to migrate data and create demo accounts
 
+If you want to access admin account ,Contact Me
+
 ## Tech Stack
 
 | Technology | Use |
