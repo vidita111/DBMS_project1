@@ -7,6 +7,7 @@
 ![Render](https://img.shields.io/badge/Render-46E3B7?logo=render&logoColor=black)
 
 A DBMS project that manages exam logistics: students, faculty, branches, subjects, exams, time slots, rooms, seat allocations and invigilation duties. Built with Flask and a relational database, deployed on Render with TiDB Cloud.
+> This project uses sample data for demonstration purposes.
 
 **Live demo:** https://nsut-exam-system.onrender.com (free tier, so the first load can be slow)
 
